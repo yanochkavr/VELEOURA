@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veloura Beauty</title>
+
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+h2 {
+color: #7a3e52;
+text-align: center;
+font-size: 28px;
+letter-spacing: 1px;
+margin-bottom: 25px;
+}
+
+.hero-text {
+text-align: center;
+padding: 30px;
+}
+.reviews {
+background: #fff0f5;
+padding: 35px 20px;
+margin: 30px 0;
+border-radius: 25px;
+}
+.gallery {
+background: #fff0f5;
+padding: 35px 20px;
+margin: 30px 0;
+border-radius: 25px;
+}
+
+.gallery h2 {
+text-align: center;
+color: #7a3e52;
+margin-bottom: 25px;
+}
+
+.gallery img {
+border-radius: 20px;
+box-shadow: 0 5px 15px rgba(122, 62, 82, 0.12);
+}
+
+
+.reviews h2 {
+text-align: center;
+color: #7a3e52;
+margin-bottom: 25px;
+}
+
+.reviews div {
+background: white;
+padding: 20px;
+margin: 15px auto;
+border-radius: 20px;
+max-width: 500px;
+box-shadow: 0 5px 15px rgba(122, 62, 82, 0.12);
+}
+
+.hero-text h1 {
+font-size: 42px;
+color: #7a3e52;
+letter-spacing: 5px;
+}
+
+.hero-text p {
+font-size: 18px;
+color: #7a3e52;
+margin-top: 10px;
+}
+
+.button {
+display: inline-block;
+background: #333;
+color: white;
+padding: 12px 25px;
+border-radius: 25px;
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.button:hover {
+background: #555;
+transform: scale(1.05);
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #fce4fc;
+color: #2b2023;
+}
+
+header {
+padding: 25px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #f8c8d8;
+}
+
+.logo {
+font-size: 30px;
+font-weight: bold;
+letter-spacing: 4px;
+color: #7a3e52
+}
+
+nav a {
+margin-left: 25px;
+text-decoration: none;
+color: #7a3e52;
+font-weight: bold;
+transition: 0.3;
+}
+nav a:hover {
+color: #b85c7a;
+}
+
+.hero {
+min-height: 80vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 40px 20px;
+}
+
+.hero h1 {
+font-size: 64px;
+max-width: 800px;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 20px;
+max-width: 550px;
+line-height: 1.6;
+margin-bottom: 35px;
+color: #6f5c61;
+}
+
+.button {
+background: #2b2023;
+color: white;
+padding: 16px 32px;
+border-radius: 30px;
+text-decoration: none;
+font-size: 16px;
+}
+
+.button:hover {
+opacity: 0.8;
+}
+.services {
+padding: 80px 8%;
+text-align: center;
+}
+
+.services h2 {
+font-size: 42px;
+margin-bottom: 40px;
+}
+
+.service-card {
+display: inline-block;
+vertical-align: top;
+width: 28%;
+min-width: 250px;
+margin: 10px;
+padding: 35px 25px;
+background: white;
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+text-align: left;
+}
+
+.service-card h3 {
+font-size: 24px;
+margin-bottom: 15px;
+}
+
+.service-card p {
+color: #6f5c61;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+.service-card strong {
+font-size: 18px;
+}
+.hero-image {
+width: 380px;
+height: 480px;
+object-fit: cover;
+border-radius: 200px 200px 30px 30px;
+margin-bottom: 35px;
+box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 700px) {
+
+header {
+padding: 20px;
+flex-direction: column;
+gap: 15px;
+}
+
+nav a {
+margin: 0 8px;
+font-size: 14px;
+}
+
+.hero {
+min-height: auto;
+padding: 50px 20px;
+}
+
+.hero h1 {
+font-size: 40px;
+}
+
+.hero p {
+font-size: 17px;
+}
+
+.hero-image {
+width: 280px;
+height: 350px;
+}
+
+.service-card {
+display: block;
+width: 100%;
+margin: 15px 0;
+}
+
+.services {
+padding: 50px 20px;
+}
+
+.services h2 {
+font-size: 34px;
+}
+}
+.gallery {
+padding: 80px 8%;
+text-align: center;
+}
+
+.gallery h2 {
+font-size: 42px;
+margin-bottom: 40px;
+}
+
+.gallery-images {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.gallery-images img {
+width: 30%;
+min-width: 250px;
+height: 320px;
+object-fit: cover;
+border-radius: 20px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.contact {
+margin-top: 80px;
+padding: 80px 20px;
+text-align: center;
+background: #f5e9ec;
+border-radius: 40px 40px 0 0;
+}
+
+.contact h2 {
+font-size: 42px;
+margin-bottom: 15px;
+}
+
+.contact p {
+color: #6f5c61;
+font-size: 18px;
+margin-bottom: 25px;
+}
+
+.contact .button {
+display: inline-block;
+margin-bottom: 20px;
+}
+
+.instagram {
+font-weight: bold;
+color: #2b2023 !important;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">VELOURA</div>
+
+<nav>
+<a href="https://www.google.com/maps/search/?api=1&query=Rothschild+Mall+Rishon+LeZion"target="_blank">
+Адрес
+</a></a>
+<a href="#Uslugi">Услуги</a>
+<a href="#Контакты">Контакты</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-text">
+  <h1>VELOURA</h1> 
+  <p>Красота начинается с заботы о себе</p>   
+</div>   
+    <img
+src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80"
+alt="Beauty manicure"
+class="hero-image"
+
+>
+<a href="https://wa.me/972501234567" class="button">Записаться</a>
+<div class="services">
+<div id="Uslugi"></div><h2></h2>Наши услуги</h2>
+
+<div class="service-card">
+<h3>Маникюр</h3>
+<p>Идеальные ногти и аккуратный уход.</p>
+<strong>от 80 ₪</strong>
+</div>
+
+<div class="service-card">
+<h3>Педикюр</h3>
+<p>Уход, комфорт и красивый результат.</p>
+<strong>от 100 ₪</strong>
+</div>
+
+<div class="service-card">
+<h3>Уход за лицом</h3>
+<p>Расслабляющая процедура для сияющей кожи.</p>
+<strong>от 150 ₪</strong>
+</div>
+</div>
+<div class="reviews">
+<h2>Что говорят наши клиенты</h2>
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p>«Очень понравилось! Красиво, аккуратно и невероятно приятная атмосфера.»</p>
+<strong>— Анна</strong>
+</div>
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p>«Теперь это моё любимое место. Обязательно вернусь снова!»</p>
+<strong>— София</strong>
+</div>
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p>«Результат превзошёл мои ожидания. Всё просто идеально.»</p>
+<strong>— Мария</strong>
+</div>
+</div>
+<div class="gallery">
+<h2>Наши работы</h2>
+
+<div class="gallery-images">
+<img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Маникюр">
+<img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=600&q=80" alt="Маникюр">
+<img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=600&q=80" alt="Маникюр">
+</div>
+</div>
+
+<div class="contact">
+<div id="Контакты"></div><h2>Запишись к нам</h2>
+
+<p>Будем рады видеть тебя в нашей студии.</p>
+
+<a href="https://wa.me/972501234567" class="button">Написать нам</a>
+
+<p class="instagram">@veloura.beauty</p>
+</div>
+</section>
+
+</body>
+</html>
